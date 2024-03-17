@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+library work;
+use work.gates.all;
+
+entity fourbitas is
+	port(a, b: in std_logic_vector;
+		m:in std_logic;
+		);
+end entity fourbitas;
+
+architecture trivial of fourbitas is
+	
+	begin
+end architecture trivial;

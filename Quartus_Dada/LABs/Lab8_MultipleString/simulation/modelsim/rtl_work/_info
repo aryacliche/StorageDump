@@ -1,0 +1,222 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/simulation/modelsim
+Edut
+Z1 w1665048111
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z4 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/DUT.vhdl
+Z5 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/DUT.vhdl
+l0
+L7 1
+V2cC_@UmB2eFE;[;e>ZEOL3
+!s100 KdZMUDUnh83IU`c<>=8R>1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1666980025
+!i10b 1
+Z8 !s108 1666980025.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/DUT.vhdl|
+Z10 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/DUT.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 2cC_@UmB2eFE;[;e>ZEOL3
+!i122 3
+l17
+L12 18
+Vm?bRnlHPANmQ7_55CD1KW1
+!s100 =?KfD;`RVJG>;BSk7z_5Z2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z13 w1665048337
+R3
+R2
+!i122 5
+R0
+Z14 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Testbench.vhdl
+Z15 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Testbench.vhdl|
+!s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 5
+l69
+L9 132
+VglOQzOfoKOo_Roh?9doTN3
+!s100 _05GoH?Pi6ecmQB4FRdo42
+R6
+31
+R7
+!i10b 1
+R8
+R16
+Z17 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Testbench.vhdl|
+!i113 1
+R11
+R12
+Etoplevel
+Z18 w1665050123
+Z19 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 2
+R0
+Z20 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/TopLevel.vhdl
+Z21 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/TopLevel.vhdl
+l0
+L5 1
+VRW=hg7X2^>c3bX1h9KmmK0
+!s100 gJ^gg3F;Qe=>jcbTR:JjO3
+R6
+31
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/TopLevel.vhdl|
+Z23 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/TopLevel.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R19
+R2
+R3
+DEx4 work 8 toplevel 0 22 RW=hg7X2^>c3bX1h9KmmK0
+!i122 2
+l75
+L13 146
+VI@GgZiZHNPXNM[3HOAcgh3
+!s100 :DkVc]MOQ=akL_O^kYB^L2
+R6
+31
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Ev_jtag
+Z24 w1623670142
+R19
+R2
+R3
+!i122 1
+R0
+Z25 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd
+Z26 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd
+l0
+L9 1
+VK7J:B[m3^:cB1Km[I3N602
+!s100 C:GMYKMFIUkIMaKNS>ek<2
+R6
+31
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd|
+Z28 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd|
+!i113 1
+R11
+R12
+Artl
+R19
+R2
+R3
+DEx4 work 6 v_jtag 0 22 K7J:B[m3^:cB1Km[I3N602
+!i122 1
+l85
+L44 83
+VJODH=ZQLe0=R51Pn2gWGM3
+!s100 QN^;ea;8E9NBL5]J::=Mk2
+R6
+31
+R7
+!i10b 1
+R8
+R27
+R28
+!i113 1
+R11
+R12
+Eword_detection
+Z29 w1665049413
+R19
+R2
+R3
+!i122 4
+R0
+Z30 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/MultipleStringDetector.vhd
+Z31 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/MultipleStringDetector.vhd
+l0
+L5 1
+VO?7NNOl2RZfP1h2hzB1<A3
+!s100 oFj8GXm5_>bZNh8a42X6]0
+R6
+31
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/MultipleStringDetector.vhd|
+Z33 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/MultipleStringDetector.vhd|
+!i113 1
+R11
+R12
+Abhv
+R19
+R2
+R3
+DEx4 work 14 word_detection 0 22 O?7NNOl2RZfP1h2hzB1<A3
+!i122 4
+l17
+L10 161
+VKXB75Gc6R5[9455^mM;mC0
+!s100 id]n;7STEdjHY:UcL2]662
+R6
+31
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12

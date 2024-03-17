@@ -1,0 +1,139 @@
+|DUT
+input_vector[0] => eightencoder:add_instance.e
+input_vector[1] => eightencoder:add_instance.a0
+input_vector[2] => eightencoder:add_instance.a1
+input_vector[3] => eightencoder:add_instance.a2
+input_vector[4] => eightencoder:add_instance.a3
+input_vector[5] => eightencoder:add_instance.a4
+input_vector[6] => eightencoder:add_instance.a5
+input_vector[7] => eightencoder:add_instance.a6
+input_vector[8] => eightencoder:add_instance.a7
+output_vector[0] << eightencoder:add_instance.y0
+output_vector[1] << eightencoder:add_instance.y1
+output_vector[2] << eightencoder:add_instance.y2
+
+
+|DUT|eightencoder:add_instance
+a7 => fourtotwoencoder:smallencoder1.d
+a7 => fourtotwoencoder:smallencoder2.c
+a7 => fourtotwoencoder:smallencoder2.d
+a7 => or_2:or1.A
+a7 => or_2:or4.A
+a6 => or_2:or1.B
+a5 => or_2:or2.A
+a5 => or_2:or4.B
+a4 => or_2:or2.B
+a3 => or_2:or3.A
+a3 => or_2:or5.A
+a2 => or_2:or3.B
+a1 => or_2:or5.B
+a0 => ~NO_FANOUT~
+e => fourtotwoencoder:smallencoder1.e
+e => fourtotwoencoder:smallencoder2.e
+y2 <= fourtotwoencoder:smallencoder1.y1
+y1 <= fourtotwoencoder:smallencoder1.y0
+y0 <= fourtotwoencoder:smallencoder2.y1
+
+
+|DUT|eightencoder:add_instance|Fourtotwoencoder:smallencoder1
+a => or_2:or1.A
+a => or_2:or2.A
+b => or_2:or1.B
+c => or_2:or2.B
+d => ~NO_FANOUT~
+e => and_2:and1.B
+e => and_2:and2.B
+y1 <= and_2:and1.Y
+y0 <= and_2:and2.Y
+
+
+|DUT|eightencoder:add_instance|Fourtotwoencoder:smallencoder1|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightencoder:add_instance|Fourtotwoencoder:smallencoder1|OR_2:or2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightencoder:add_instance|Fourtotwoencoder:smallencoder1|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightencoder:add_instance|Fourtotwoencoder:smallencoder1|AND_2:and2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightencoder:add_instance|Fourtotwoencoder:smallencoder2
+a => or_2:or1.A
+a => or_2:or2.A
+b => or_2:or1.B
+c => or_2:or2.B
+d => ~NO_FANOUT~
+e => and_2:and1.B
+e => and_2:and2.B
+y1 <= and_2:and1.Y
+y0 <= and_2:and2.Y
+
+
+|DUT|eightencoder:add_instance|Fourtotwoencoder:smallencoder2|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightencoder:add_instance|Fourtotwoencoder:smallencoder2|OR_2:or2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightencoder:add_instance|Fourtotwoencoder:smallencoder2|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightencoder:add_instance|Fourtotwoencoder:smallencoder2|AND_2:and2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightencoder:add_instance|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightencoder:add_instance|OR_2:or2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightencoder:add_instance|OR_2:or3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightencoder:add_instance|OR_2:or4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightencoder:add_instance|OR_2:or5
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

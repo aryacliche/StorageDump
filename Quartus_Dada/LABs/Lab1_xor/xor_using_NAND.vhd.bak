@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+library work;
+use work.Gates.all;
+
+entity xor_using_NAND is
+	port(
+		in1, in2: in std_logic;
+		output: out std_logic
+	);
+end entity xor_using_NAND;
+
+architecture trivial of xor_using_NAND is
+	
+	for all: NAND_2
+		use entity NAND_2(Equations);
+		
+	signal 
+	
+	begin
+
+end architecture trivial;

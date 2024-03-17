@@ -1,0 +1,24 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+entity mydff is 
+port ( clk,rst: in std_logic;
+		d: in std_logic_vector(1 downto 0);
+		q: out std_logic_vector(1 downto 0));
+end entity;
+
+
+architecture eq of mydff is
+begin
+
+process(d,clk,rst)
+begin
+		if(rst = '1') then
+			q<="00";
+		elsif(rising_edge(clk)) then
+			q<= d;
+	   end if;
+end process;
+end architecture;
+
+

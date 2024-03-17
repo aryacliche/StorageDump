@@ -1,0 +1,220 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/simulation/modelsim
+Ealu_beh
+Z1 w1662638630
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
+R0
+Z4 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/BehaviouralMUX.vhd
+Z5 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/BehaviouralMUX.vhd
+l0
+L4 1
+VYUWAPc^N]1IVhOgz6R7>c0
+!s100 >?kOc6=9KYCj5dC<d]Hm20
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1662639275
+!i10b 1
+Z8 !s108 1662639274.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/BehaviouralMUX.vhd|
+Z10 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/BehaviouralMUX.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aa1
+R2
+R3
+DEx4 work 7 alu_beh 0 22 YUWAPc^N]1IVhOgz6R7>c0
+!i122 4
+l133
+Z13 L13 146
+VoVno`a`boFd6KV1I2_3PB3
+!s100 zF8;V<^aiC37QbFV^<0X]1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z14 w1662632536
+R2
+R3
+!i122 3
+R0
+Z15 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/DUT.vhdl
+Z16 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/DUT.vhdl
+l0
+L7 1
+Vi`00cCANPbdWgoRV>IbYo0
+!s100 ATDL5T16G8a<PT>YBPMK<0
+R6
+31
+Z17 !s110 1662639274
+!i10b 1
+R8
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/DUT.vhdl|
+Z19 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 i`00cCANPbdWgoRV>IbYo0
+!i122 3
+l21
+L12 21
+V[YiV0mg8fN`^8ZD8BlfWY1
+!s100 [oz?AC>iB?:U8_9g;aVa33
+R6
+31
+R17
+!i10b 1
+R8
+R18
+R19
+!i113 1
+R11
+R12
+Etestbench
+Z20 w1662632739
+R3
+R2
+!i122 5
+R0
+Z21 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Testbench.vhdl
+Z22 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+Z23 !s108 1662639275.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Testbench.vhdl|
+!s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 5
+l69
+L9 132
+VzEEQBgn5^5k4Ge3ga_;bO0
+!s100 69J5m`9:7a]nae=EBMk4]2
+R6
+31
+R7
+!i10b 1
+R23
+R24
+Z25 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Testbench.vhdl|
+!i113 1
+R11
+R12
+Etoplevel
+Z26 w1662638927
+Z27 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 2
+R0
+Z28 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Scan_Chain_Files/TopLevel.vhdl
+Z29 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Scan_Chain_Files/TopLevel.vhdl
+l0
+L5 1
+VRW=hg7X2^>c3bX1h9KmmK0
+!s100 gJ^gg3F;Qe=>jcbTR:JjO3
+R6
+31
+R17
+!i10b 1
+R8
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Scan_Chain_Files/TopLevel.vhdl|
+Z31 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Scan_Chain_Files/TopLevel.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R27
+R2
+R3
+DEx4 work 8 toplevel 0 22 RW=hg7X2^>c3bX1h9KmmK0
+!i122 2
+l75
+R13
+VIYIbJn1?2nkS:R2?CIj0e1
+!s100 YGd13KV:d[T`ImV3OUPk@2
+R6
+31
+R17
+!i10b 1
+R8
+R30
+R31
+!i113 1
+R11
+R12
+Ev_jtag
+Z32 w1623670142
+R27
+R2
+R3
+!i122 1
+R0
+Z33 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd
+Z34 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd
+l0
+L9 1
+VK7J:B[m3^:cB1Km[I3N602
+!s100 C:GMYKMFIUkIMaKNS>ek<2
+R6
+31
+R17
+!i10b 1
+R8
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd|
+Z36 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab6_Mux/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd|
+!i113 1
+R11
+R12
+Artl
+R27
+R2
+R3
+DEx4 work 6 v_jtag 0 22 K7J:B[m3^:cB1Km[I3N602
+!i122 1
+l85
+L44 83
+VJODH=ZQLe0=R51Pn2gWGM3
+!s100 QN^;ea;8E9NBL5]J::=Mk2
+R6
+31
+R17
+!i10b 1
+R8
+R35
+R36
+!i113 1
+R11
+R12

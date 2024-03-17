@@ -1,0 +1,22 @@
+|DUT
+input_vector[0] => full_adder_with_nand:add_instance.b
+input_vector[1] => full_adder_with_nand:add_instance.a
+input_vector[2] => full_adder_with_nand:add_instance.cin
+output_vector[0] << full_adder_with_nand:add_instance.cout
+output_vector[1] << full_adder_with_nand:add_instance.s
+
+
+|DUT|Full_adder_with_nand:add_instance
+a => cout.IN0
+a => cout.IN0
+a => s.IN0
+b => cout.IN1
+b => cout.IN0
+b => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => s.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+

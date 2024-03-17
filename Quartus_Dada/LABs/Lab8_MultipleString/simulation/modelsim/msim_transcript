@@ -1,0 +1,129 @@
+# Reading pref.tcl
+# do MultipleStringDetector_run_msim_rtl_systemverilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:25 on Oct 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity v_jtag
+# -- Compiling architecture rtl of v_jtag
+# End time: 23:30:25 on Oct 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:25 on Oct 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/v_jtag/synthesis/v_jtag.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity v_jtag
+# -- Compiling architecture rtl of v_jtag
+# End time: 23:30:25 on Oct 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/TopLevel.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:25 on Oct 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/TopLevel.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity TopLevel
+# -- Compiling architecture Struct of TopLevel
+# ** Warning: C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Scan_Chain_Files/TopLevel.vhdl(99): (vcom-1246) Range 0 downto 1 is null.
+# End time: 23:30:25 on Oct 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vcom -93 -work work {C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/DUT.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:25 on Oct 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/DUT.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DUT
+# -- Compiling architecture DutWrap of DUT
+# End time: 23:30:25 on Oct 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/MultipleStringDetector.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:25 on Oct 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/MultipleStringDetector.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity word_detection
+# -- Compiling architecture bhv of word_detection
+# End time: 23:30:25 on Oct 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Testbench.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:30:25 on Oct 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab8_MultipleString/Testbench.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Testbench
+# -- Compiling architecture Behave of Testbench
+# End time: 23:30:25 on Oct 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" Testbench 
+# Start time: 23:30:25 on Oct 28,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(behave)
+# Loading work.dut(dutwrap)
+# Loading ieee.numeric_std(body)
+# Loading work.word_detection(bhv)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance
+# ** Note: SUCCESS, all tests passed.
+#    Time: 874 ns  Iteration: 0  Instance: /testbench
+add wave -position end  sim:/testbench/dut_instance/add_instance/y_present1
+add wave -position end  sim:/testbench/dut_instance/add_instance/y_next1
+add wave -position end  sim:/testbench/dut_instance/add_instance/y_present2
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance
+# ** Note: SUCCESS, all tests passed.
+#    Time: 874 ns  Iteration: 0  Instance: /testbench
+# End time: 23:32:48 on Oct 28,2022, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 3

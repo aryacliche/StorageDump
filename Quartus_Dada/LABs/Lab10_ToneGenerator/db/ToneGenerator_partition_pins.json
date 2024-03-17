@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "clk_out",
+					"strict" : false
+				},
+				{
+					"name" : "led_sa",
+					"strict" : false
+				},
+				{
+					"name" : "led_re",
+					"strict" : false
+				},
+				{
+					"name" : "led_ga",
+					"strict" : false
+				},
+				{
+					"name" : "led_ma",
+					"strict" : false
+				},
+				{
+					"name" : "led_pa",
+					"strict" : false
+				},
+				{
+					"name" : "led_dha",
+					"strict" : false
+				},
+				{
+					"name" : "led_ni",
+					"strict" : false
+				},
+				{
+					"name" : "led_saa",
+					"strict" : false
+				},
+				{
+					"name" : "re",
+					"strict" : false
+				},
+				{
+					"name" : "ni",
+					"strict" : false
+				},
+				{
+					"name" : "saa",
+					"strict" : false
+				},
+				{
+					"name" : "pa",
+					"strict" : false
+				},
+				{
+					"name" : "dha",
+					"strict" : false
+				},
+				{
+					"name" : "sa",
+					"strict" : false
+				},
+				{
+					"name" : "ma",
+					"strict" : false
+				},
+				{
+					"name" : "ga",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

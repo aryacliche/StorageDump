@@ -1,0 +1,46 @@
+|DUT
+input_vector[0] => Fourtotwoencoder:add_instance.e
+input_vector[1] => Fourtotwoencoder:add_instance.d
+input_vector[2] => Fourtotwoencoder:add_instance.c
+input_vector[3] => Fourtotwoencoder:add_instance.b
+input_vector[4] => Fourtotwoencoder:add_instance.a
+output_vector[0] <= Fourtotwoencoder:add_instance.y0
+output_vector[1] <= Fourtotwoencoder:add_instance.y1
+
+
+|DUT|Fourtotwoencoder:add_instance
+a => or_2:or1.A
+a => or_2:or2.A
+b => or_2:or1.B
+c => or_2:or2.B
+d => ~NO_FANOUT~
+e => and_2:and1.B
+e => and_2:and2.B
+y1 <= and_2:and1.Y
+y0 <= and_2:and2.Y
+
+
+|DUT|Fourtotwoencoder:add_instance|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Fourtotwoencoder:add_instance|OR_2:or2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Fourtotwoencoder:add_instance|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Fourtotwoencoder:add_instance|AND_2:and2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

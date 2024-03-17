@@ -1,0 +1,286 @@
+|DUT
+input_vector[0] => fourbitas:add_instance.m
+input_vector[1] => fourbitas:add_instance.b[0]
+input_vector[2] => fourbitas:add_instance.b[1]
+input_vector[3] => fourbitas:add_instance.b[2]
+input_vector[4] => fourbitas:add_instance.b[3]
+input_vector[5] => fourbitas:add_instance.a[0]
+input_vector[6] => fourbitas:add_instance.a[1]
+input_vector[7] => fourbitas:add_instance.a[2]
+input_vector[8] => fourbitas:add_instance.a[3]
+output_vector[0] << fourbitas:add_instance.s[0]
+output_vector[1] << fourbitas:add_instance.s[1]
+output_vector[2] << fourbitas:add_instance.s[2]
+output_vector[3] << fourbitas:add_instance.s[3]
+output_vector[4] << fourbitas:add_instance.cout
+
+
+|DUT|fourbitas:add_instance
+a[0] => fulladder:fulladder1.a
+a[1] => fulladder:fulladder2.a
+a[2] => fulladder:fulladder3.a
+a[3] => fulladder:fulladder4.a
+b[0] => xor_2:xor1.A
+b[1] => xor_2:xor2.A
+b[2] => xor_2:xor3.A
+b[3] => xor_2:xor4.A
+m => xor_2:xor1.B
+m => fulladder:fulladder1.cin
+m => xor_2:xor2.B
+m => xor_2:xor3.B
+m => xor_2:xor4.B
+s[0] <= fulladder:fulladder1.s
+s[1] <= fulladder:fulladder2.s
+s[2] <= fulladder:fulladder3.s
+s[3] <= fulladder:fulladder4.s
+cout <= fulladder:fulladder4.cout
+
+
+|DUT|fourbitas:add_instance|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder1
+a => halfadder:half1.a
+b => halfadder:half1.b
+cin => halfadder:half2.b
+s <= halfadder:half2.s
+cout <= or_2:or1.Y
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder1|halfadder:half1
+a => and_2:and1.A
+a => xor_2:xor1.A
+b => and_2:and1.B
+b => xor_2:xor1.B
+s <= xor_2:xor1.Y
+cout <= and_2:and1.Y
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder1|halfadder:half1|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder1|halfadder:half1|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder1|halfadder:half2
+a => and_2:and1.A
+a => xor_2:xor1.A
+b => and_2:and1.B
+b => xor_2:xor1.B
+s <= xor_2:xor1.Y
+cout <= and_2:and1.Y
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder1|halfadder:half2|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder1|halfadder:half2|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder1|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|XOR_2:xor2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder2
+a => halfadder:half1.a
+b => halfadder:half1.b
+cin => halfadder:half2.b
+s <= halfadder:half2.s
+cout <= or_2:or1.Y
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder2|halfadder:half1
+a => and_2:and1.A
+a => xor_2:xor1.A
+b => and_2:and1.B
+b => xor_2:xor1.B
+s <= xor_2:xor1.Y
+cout <= and_2:and1.Y
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder2|halfadder:half1|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder2|halfadder:half1|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder2|halfadder:half2
+a => and_2:and1.A
+a => xor_2:xor1.A
+b => and_2:and1.B
+b => xor_2:xor1.B
+s <= xor_2:xor1.Y
+cout <= and_2:and1.Y
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder2|halfadder:half2|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder2|halfadder:half2|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder2|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|XOR_2:xor3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder3
+a => halfadder:half1.a
+b => halfadder:half1.b
+cin => halfadder:half2.b
+s <= halfadder:half2.s
+cout <= or_2:or1.Y
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder3|halfadder:half1
+a => and_2:and1.A
+a => xor_2:xor1.A
+b => and_2:and1.B
+b => xor_2:xor1.B
+s <= xor_2:xor1.Y
+cout <= and_2:and1.Y
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder3|halfadder:half1|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder3|halfadder:half1|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder3|halfadder:half2
+a => and_2:and1.A
+a => xor_2:xor1.A
+b => and_2:and1.B
+b => xor_2:xor1.B
+s <= xor_2:xor1.Y
+cout <= and_2:and1.Y
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder3|halfadder:half2|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder3|halfadder:half2|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder3|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|XOR_2:xor4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder4
+a => halfadder:half1.a
+b => halfadder:half1.b
+cin => halfadder:half2.b
+s <= halfadder:half2.s
+cout <= or_2:or1.Y
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder4|halfadder:half1
+a => and_2:and1.A
+a => xor_2:xor1.A
+b => and_2:and1.B
+b => xor_2:xor1.B
+s <= xor_2:xor1.Y
+cout <= and_2:and1.Y
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder4|halfadder:half1|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder4|halfadder:half1|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder4|halfadder:half2
+a => and_2:and1.A
+a => xor_2:xor1.A
+b => and_2:and1.B
+b => xor_2:xor1.B
+s <= xor_2:xor1.Y
+cout <= and_2:and1.Y
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder4|halfadder:half2|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder4|halfadder:half2|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fourbitas:add_instance|fulladder:fulladder4|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

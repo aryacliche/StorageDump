@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+library Work;
+use Work.Gates.all;
+
+entity Full_adder_with_nand is 
+	port();
+
+end entity Full_adder_with_nand;
+
+architecture trivial of Full_adder_with_nand is
+
+	for all: xor_using_just_NAND
+		use entity xor_using_just_NAND(trivial);
+		
+	for all: NAND_2
+		use entity NAND_2(Equations);
+	
+	begin
+
+end architecture trivial;

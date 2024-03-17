@@ -1,0 +1,85 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity  fsm_behav is
+ port(clock   : in std_logic; 
+      reset: in std_logic;
+      inp  : in std_logic; 
+      y: out std_logic  
+      );
+end fsm_behav;
+
+architecture behav  of fsm_behav is
+--type declaration synthesis tool will assign state encoding
+type statetype is (init,s0,s01,s10,s11);
+signal ps,nx_state : statetype;  
+
+
+begin 
+
+reg_process: process(clock,reset)
+begin
+if(reset='1')then 
+ps<=RST;
+elsif(clock'event and clock='1')then
+ps<=nx_state;
+end if;
+end process reg_process;
+
+
+     
+    next_state_output_logic: process (ps, inp)
+     begin 
+      case ps is 
+      
+      --RST
+      when RST=>
+      y<='0';
+      if inp='1'then nx_state<=s_b;
+      else nx_state<=s_a;end if;
+      
+      --S_a
+      when s_a=>
+      y<='0';
+      if inp='1'then nx_state<=s_ab;
+      else nx_state<=s_a;end if;
+      
+       --S_b
+      when s_b=>
+      y<='0';
+      if inp='1'then nx_state<=s_b;
+      else nx_state<=s_ba;end if;
+      
+       --S_ab
+      when s_ab=>
+      y<='0';
+      if inp='1'then nx_state<=s_b;
+      else nx_state<=s_aba;end if;
+      
+       --S_ba
+      when s_ba=>
+      y<='0';
+      if inp='1'then nx_state<=s_bab;
+      else nx_state<=s_a;end if;
+      
+       --S_aba
+      when s_aba=>
+      y<=inp; --abab detected
+      if inp='1'then nx_state<=s_bab;
+      else nx_state<=s_a;end if;
+      
+       --S_bab
+      when s_bab=>
+      y<=not inp;  -- baba detected
+      if inp='1'then nx_state<=s_b;
+      else nx_state<=s_aba;end if;
+      
+       --DEFAULT CASE
+      when others=>
+       y<='0';
+        nx_state<=RST;
+      end case; 
+      end process next_state_output_logic;
+
+end behav;

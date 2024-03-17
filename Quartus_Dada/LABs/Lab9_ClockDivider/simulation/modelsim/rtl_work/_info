@@ -1,0 +1,95 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab9_ClockDivider/simulation/modelsim
+Eclock_divider
+Z1 w1666973451
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z5 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab9_ClockDivider/clock_divider.vhd
+Z6 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab9_ClockDivider/clock_divider.vhd
+l0
+L6 1
+VH6H<iS639d7Y7z]i;XPFn2
+!s100 Bj0<5J;8<Z?gEgY]cka_70
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1666973485
+!i10b 1
+Z9 !s108 1666973485.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab9_ClockDivider/clock_divider.vhd|
+Z11 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab9_ClockDivider/clock_divider.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abhv
+R2
+R3
+R4
+DEx4 work 13 clock_divider 0 22 H6H<iS639d7Y7z]i;XPFn2
+!i122 0
+l14
+L11 23
+VoRVO596DlVQAjgo7O7>`z3
+!s100 oGkcf@0Pa]>HVmPKA=6=Z1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eclock_divider_tb
+Z14 w1665657545
+R3
+R4
+!i122 1
+R0
+Z15 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab9_ClockDivider/clock_divider_tb.vhd
+Z16 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab9_ClockDivider/clock_divider_tb.vhd
+l0
+L4 1
+V119iRA8:_b7Ec7RSW;:3<2
+!s100 d?TOnS<B_9l]N`OC<=1lJ0
+R7
+31
+Z17 !s110 1666973486
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab9_ClockDivider/clock_divider_tb.vhd|
+!s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab9_ClockDivider/clock_divider_tb.vhd|
+!i113 1
+R12
+R13
+Abhv
+R3
+R4
+DEx4 work 16 clock_divider_tb 0 22 119iRA8:_b7Ec7RSW;:3<2
+!i122 1
+l16
+L7 15
+V3;5O=4NDdPoio3D@[9M`T1
+!s100 FPI`>eXc7578U?=Ro<kIF1
+R7
+31
+R17
+!i10b 1
+R9
+R18
+Z19 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Lab9_ClockDivider/clock_divider_tb.vhd|
+!i113 1
+R12
+R13

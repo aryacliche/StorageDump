@@ -1,0 +1,705 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/simulation/modelsim
+Ealpha
+Z1 w1663771272
+Z2 DPx4 work 5 gates 0 22 VkD^3DhB>X@<bPcNn[MUi0
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z5 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Comparator.vhd
+Z6 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Comparator.vhd
+l0
+L217 1
+VlUm<`ZHb@YAZc<`LE@_PK1
+!s100 fhT8ae1_GTR_11g94UW4E0
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1663771503
+!i10b 1
+Z9 !s108 1663771503.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Comparator.vhd|
+Z11 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Comparator.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Asubtractor
+R2
+R3
+R4
+DEx4 work 5 alpha 0 22 lUm<`ZHb@YAZc<`LE@_PK1
+!i122 2
+l234
+L221 18
+VdkNAWj9<hb:Ge`4aWF:[e1
+!s100 Sf8H^DK4Z@5WS1gDe6@G;1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eand_2
+Z14 w1663610958
+R3
+R4
+!i122 0
+R0
+Z15 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Gates.vhdl
+Z16 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Gates.vhdl
+l0
+L61 1
+VhNc4o@4iWJ5J]^KE3l>Sg2
+!s100 FVPgla4Lk4NdUm:Oj9;m<2
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Gates.vhdl|
+Z18 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Gates.vhdl|
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+Z19 DEx4 work 5 and_2 0 22 hNc4o@4iWJ5J]^KE3l>Sg2
+!i122 0
+l66
+L65 4
+V11ZJFzFOkM[^BUcJhHokb3
+!s100 jXIFgll?X3>1kO;@C5UlN2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Edut
+Z20 w1663771477
+R3
+R4
+!i122 1
+R0
+Z21 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/DUT.vhdl
+Z22 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/DUT.vhdl
+l0
+L7 1
+V_idG[;D^oOS9zYUB`>1lA2
+!s100 d:0B[VK:5ngi]`^cM^EMn1
+R7
+31
+R8
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/DUT.vhdl|
+Z24 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/DUT.vhdl|
+!i113 1
+R12
+R13
+Adutwrap
+R3
+R4
+DEx4 work 3 dut 0 22 _idG[;D^oOS9zYUB`>1lA2
+!i122 1
+l20
+L12 24
+VWRlYX<ID4=Fo8j7<SR7KG1
+!s100 A8_LEh;^;LTM3jEAB4a:I3
+R7
+31
+R8
+!i10b 1
+R9
+R23
+R24
+!i113 1
+R12
+R13
+Efourbitas
+R1
+R2
+R3
+R4
+!i122 2
+R0
+R5
+R6
+l0
+L74 1
+V7BiYVH8e>UL3Gm@o_4Ac53
+!s100 2e9UjloVGaLF51A38>U7z0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Atrivial
+Z25 DEx4 work 5 xor_2 0 22 Iel@?bBd5EA^TznddjTnE2
+Z26 DEx4 work 9 fulladder 0 22 ClB9d`YJHOUGK61^0ElR10
+R2
+R3
+R4
+DEx4 work 9 fourbitas 0 22 7BiYVH8e>UL3Gm@o_4Ac53
+!i122 2
+l97
+L82 44
+V8L[;SIP>b[=_=4OKPSoV;1
+!s100 >GjA>H4`WODNMJn;U_`cm1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Efull_adder
+R14
+R3
+R4
+!i122 0
+R0
+R15
+R16
+l0
+L140 1
+V:GKfiYnQcX84S2Sk]767Y0
+!s100 lfWzNNVdJkzEV6jW?IJ7Q0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 10 full_adder 0 22 :GKfiYnQcX84S2Sk]767Y0
+!i122 0
+l145
+L144 5
+V:GP>DQ7i1E^5f]J;mB6dE2
+!s100 i0W3=>8X8bST>Gfo8nDRc3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Efulladder
+R1
+R2
+R3
+R4
+!i122 2
+R0
+R5
+R6
+l0
+L36 1
+VClB9d`YJHOUGK61^0ElR10
+!s100 cN3f`4:6fSiSOLb2k;K7<2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Atrivial
+Z27 DEx4 work 9 halfadder 0 22 Kjl=ZOg4f05MLc@:J^h@j3
+Z28 DEx4 work 4 or_2 0 22 L:hWQJZSSzNdF3gHZ_<VT0
+R2
+R3
+R4
+R26
+!i122 2
+l56
+L41 25
+V]`kWn^LaR=FYGbcNVD0?c2
+!s100 AmF;Unio5Gna:zMX;K9@A0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Pgates
+R3
+R4
+!i122 0
+R14
+R0
+R15
+R16
+l0
+L7 1
+VVkD^3DhB>X@<bPcNn[MUi0
+!s100 4hn`d6WnQAzmj;A_d6dNE3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ehalf_adder
+R14
+R3
+R4
+!i122 0
+R0
+R15
+R16
+l0
+L128 1
+V`kWU5;7dKV1b[iYROLeM63
+!s100 O3AeBGfzKBQXj5FiW[_9z0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 10 half_adder 0 22 `kWU5;7dKV1b[iYROLeM63
+!i122 0
+l133
+L132 5
+VfaeAFo9=PfdWWeoZ<jc4T3
+!s100 ^4RUaUXH^R0_6CIJJJ;h70
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ehalfadder
+R1
+R2
+R3
+R4
+!i122 2
+R0
+R5
+R6
+l0
+L8 1
+VKjl=ZOg4f05MLc@:J^h@j3
+!s100 6_2;XTVzmCk_^:fE@1D5K0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Atrivial
+R25
+R19
+R2
+R3
+R4
+R27
+!i122 2
+l22
+L13 16
+ViH];R2^WbXFFBgTYEGmKK3
+!s100 <3Oba;7oj[UmMgKEdW[J`2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Einverter
+R14
+R3
+R4
+!i122 0
+R0
+R15
+R16
+l0
+L49 1
+V7fcMed?T;XLOf@iUiVH0J3
+!s100 nm@B]fH[YTmBzodc<J6Fd0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 8 inverter 0 22 7fcMed?T;XLOf@iUiVH0J3
+!i122 0
+l54
+L53 4
+ViEj6>@[_cdnPG57f`38gN0
+!s100 ng@eWOg`K@B>S=;0A4Aff0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Enand_2
+R14
+R3
+R4
+!i122 0
+R0
+R15
+R16
+l0
+L72 1
+VKRG[iBY9[kCd;o^gm31`73
+!s100 I:Dl7Y;AjdGFmO`6m<XAb2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 6 nand_2 0 22 KRG[iBY9[kCd;o^gm31`73
+!i122 0
+l77
+L76 4
+VlD^?H=LJkIbY<E@HX9Y6Q2
+!s100 U?DoYM<zHg@]G3j7E9Qfa1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Enor_2
+R14
+R3
+R4
+!i122 0
+R0
+R15
+R16
+l0
+L94 1
+VFciJeeQ;2CR`72Waoi@@Q0
+!s100 Pc=E[;C_QfZAVgn5lklo]0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 5 nor_2 0 22 FciJeeQ;2CR`72Waoi@@Q0
+!i122 0
+l99
+L98 4
+V6B=chP:2zS9>lLfS>l>eJ2
+!s100 j[U2i;HL7<@[@f5?b4iN50
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Eor_2
+R14
+R3
+R4
+!i122 0
+R0
+R15
+R16
+l0
+L83 1
+VL:hWQJZSSzNdF3gHZ_<VT0
+!s100 IChB]FQJ]54S_ejJ9lnCX0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+R28
+!i122 0
+l88
+L87 4
+VIV1lz9KCNjzb6Lfmc=dm81
+!s100 [H0dA?YbeQ9_ZUCdlIW[o1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Etestbench
+Z29 w1663771442
+R4
+R3
+!i122 3
+R0
+Z30 8C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Testbench.vhdl
+Z31 FC:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R7
+31
+R8
+!i10b 1
+R9
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Testbench.vhdl|
+!s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Testbench.vhdl|
+!i113 1
+R12
+R13
+Abehave
+R4
+R3
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 3
+l69
+L9 132
+VM[JNc9INWP?:@2l;IVDDi3
+!s100 ?TPR7SG_ZOe:VmM03LnPB2
+R7
+31
+R8
+!i10b 1
+R9
+R32
+Z33 !s107 C:/Users/aryav/Desktop/Quartus_Dada/LABs/Midsem/Testbench.vhdl|
+!i113 1
+R12
+R13
+Exnor_2
+R14
+R3
+R4
+!i122 0
+R0
+R15
+R16
+l0
+L117 1
+V?V:h=10a`gji@QE16hzcS2
+!s100 XKT;9S6Gnig]B2>NRXL6h1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+DEx4 work 6 xnor_2 0 22 ?V:h=10a`gji@QE16hzcS2
+!i122 0
+l122
+L121 4
+VLl@aPImC`1RLimLBXLgOM3
+!s100 49mn?I07[=fJ_hIJA>3Xn3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Exor_2
+R14
+R3
+R4
+!i122 0
+R0
+R15
+R16
+l0
+L106 1
+VIel@?bBd5EA^TznddjTnE2
+!s100 m]WKb^MCTFA3R53d2fKM>3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Aequations
+R3
+R4
+R25
+!i122 0
+l111
+L110 4
+VVoGl8V[_?6cJ2OTaI<[KR0
+!s100 mGjNSGI?=[<eMR=VC;;9j2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Eznvlg
+R1
+R2
+R3
+R4
+!i122 2
+R0
+R5
+R6
+l0
+L134 1
+Vl1^5afgE?W=eWM]doziA82
+!s100 R7eQ1=RN`JXR@J<9_m8SN1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 5 znvlg 0 22 l1^5afgE?W=eWM]doziA82
+!i122 2
+l152
+L138 72
+V07RY5Z7BJA4E0LDg@hY@@3
+!s100 S@[S_ec?e=o`:WIY]3EMD2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13

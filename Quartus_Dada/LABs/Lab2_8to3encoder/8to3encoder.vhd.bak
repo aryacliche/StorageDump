@@ -1,0 +1,10 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+library work;
+use work.Gates.all;
+
+entity eightencoder is
+	port(a7,a6,a5,a4,a3,a2,a1,a0,e: in std_logic;
+		y2, y1,y0: out std_logic);
+end entity eightencoder;

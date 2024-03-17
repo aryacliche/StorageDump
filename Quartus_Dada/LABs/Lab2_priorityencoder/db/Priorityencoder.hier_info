@@ -1,0 +1,66 @@
+|DUT
+input_vector[0] => priorityencoder:add_instance.d
+input_vector[1] => priorityencoder:add_instance.c
+input_vector[2] => priorityencoder:add_instance.b
+input_vector[3] => priorityencoder:add_instance.a
+output_vector[0] << priorityencoder:add_instance.v
+output_vector[1] << priorityencoder:add_instance.y0
+output_vector[2] << priorityencoder:add_instance.y1
+
+
+|DUT|priorityencoder:add_instance
+a => or_2:or1.A
+a => or_2:or2.A
+a => or_2:or3.A
+b => or_2:or1.B
+b => or_2:or3.B
+b => inverter:not1.A
+c => or_2:or4.A
+c => and_2:and1.B
+d => or_2:or4.B
+y1 <= or_2:or1.Y
+y0 <= or_2:or2.Y
+v <= or_2:or5.Y
+
+
+|DUT|priorityencoder:add_instance|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|priorityencoder:add_instance|OR_2:or2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|priorityencoder:add_instance|OR_2:or3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|priorityencoder:add_instance|OR_2:or4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|priorityencoder:add_instance|OR_2:or5
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|priorityencoder:add_instance|INVERTER:not1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|priorityencoder:add_instance|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
