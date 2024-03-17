@@ -1,0 +1,86 @@
+\contentsline {chapter}{Author's Note}{4}{chapter*.2}%
+\contentsline {section}{Acknowledgements}{4}{section*.3}%
+\contentsline {chapter}{Mathematical Base to Cryptography}{6}{chapter*.4}%
+\contentsline {section}{Introduction to Cryptography}{6}{section*.5}%
+\contentsline {subsection}{\numberline {1.1.1}Some terminologies}{6}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Early Cryptography}{7}{subsection.1.1.2}%
+\contentsline {section}{Some Mathematical Pre-requisites for Modular Arithematic}{7}{section*.6}%
+\contentsline {subsection}{\numberline {1.2.1}GCD}{7}{subsection.1.2.1}%
+\contentsline {section}{Modular Arithematic}{8}{section*.7}%
+\contentsline {subsection}{\numberline {1.3.1}Format}{8}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Properties}{8}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Ring theory}{9}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Shift Ciphers and Modulo Arithematic}{10}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Fast Powering algorithm}{10}{subsection.1.3.5}%
+\contentsline {section}{Prime numbers and Finite Fields}{10}{section*.8}%
+\contentsline {subsection}{\numberline {1.4.1}Division modulo $m$}{10}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Division in rings}{11}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Finite Fields}{11}{subsection.1.4.3}%
+\contentsline {section}{Fermat's ``Little'' Theorem}{11}{section*.9}%
+\contentsline {subsection}{\numberline {1.5.1}Primitive Roots Theorem}{12}{subsection.1.5.1}%
+\contentsline {section}{Symmetric Ciphers}{13}{section*.10}%
+\contentsline {subsection}{\numberline {1.6.1}Notations}{13}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Principles of Succesful Ciphers}{13}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Encoding of Cipher Blocks}{14}{subsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.6.4}Examples of Symmetric Ciphers}{14}{subsection.1.6.4}%
+\contentsline {subsection}{\numberline {1.6.5}Random bit sequences}{15}{subsection.1.6.5}%
+\contentsline {section}{Asymmetric Ciphers}{16}{section*.15}%
+\contentsline {section}{Probability Theory}{16}{section*.16}%
+\contentsline {subsection}{\numberline {1.8.1}Basics}{16}{subsection.1.8.1}%
+\contentsline {subsection}{\numberline {1.8.2}Monty Hall Problem}{16}{subsection.1.8.2}%
+\contentsline {chapter}{Randomness and Obfuscation}{18}{chapter*.17}%
+\contentsline {section}{Random Numbers}{18}{section*.18}%
+\contentsline {subsection}{\numberline {2.1.1}Why do we need random numbers}{18}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Is it even possible to construct an actually random number?}{19}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Pseudo-Random Number Generator}{19}{subsection.2.1.3}%
+\contentsline {section}{Hash Functions}{19}{section*.19}%
+\contentsline {subsection}{\numberline {2.2.1}How does SHA-1 work?}{20}{subsection.2.2.1}%
+\contentsline {section}{Public Standard for making PRNGs}{21}{section*.20}%
+\contentsline {section}{Stream Ciphers}{21}{section*.21}%
+\contentsline {subsection}{\numberline {2.4.1}Deciphering Stream Ciphers}{22}{subsection.2.4.1}%
+\contentsline {section}{Block Cipher}{22}{section*.22}%
+\contentsline {subsection}{\numberline {2.5.1}Electronic Code Book Method}{22}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Cipher Block Chaining}{23}{subsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.1}How to decrypt CBC}{24}{subsubsection.2.5.2.1}%
+\contentsline {section}{\numberline {2.6}Counter Mode (CTR)}{24}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Decryption}{25}{subsection.2.6.1}%
+\contentsline {chapter}{Diffie Hellman and Discrete Logarithms}{26}{chapter*.28}%
+\contentsline {section}{Introduction to Diffie Hellman}{26}{section*.29}%
+\contentsline {section}{Discrete Logarithm}{27}{section*.31}%
+\contentsline {subsection}{\numberline {3.2.1}Why is it called logarithm?}{27}{subsection.3.2.1}%
+\contentsline {section}{Using Discrete Logarithm for Key Exchange}{29}{section*.33}%
+\contentsline {subsection}{\numberline {3.3.1}The anti-climactic conclusion of Diffie-Hellman}{30}{subsection.3.3.1}%
+\contentsline {section}{ElGamal Public Key Cryptography}{30}{section*.34}%
+\contentsline {section}{Mathematical Pre-requisite: Group Theory}{31}{section*.35}%
+\contentsline {subsection}{\numberline {3.5.1}General properties of a Group}{31}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Generalisation of Fermat's ``Little'' Theorem}{32}{subsection.3.5.2}%
+\contentsline {section}{How difficult is the DLP?}{33}{section*.36}%
+\contentsline {subsection}{\numberline {3.5.1}Big- \(\EuScript {O}\) notation}{33}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Computing \(\EuScript {O}\) for DLP}{34}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}How there is no inherent difficulty in DLP}{34}{subsection.3.5.3}%
+\contentsline {section}{Collision Algorithm}{35}{section*.37}%
+\contentsline {section}{Congruences moduli composite numbers}{37}{section*.38}%
+\contentsline {subsection}{\numberline {3.7.1}Chinese Remainder Theorem}{37}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Application of CRT}{38}{subsection.3.7.2}%
+\contentsline {section}{Pohlig-Hellman Algorithm}{38}{section*.39}%
+\contentsline {section}{Why don't we use pure DHP or any DLP based cryptosystem?}{40}{section*.40}%
+\contentsline {chapter}{RSA and Integer Factorisation}{41}{chapter*.41}%
+\contentsline {section}{What we have covered until now}{41}{section*.42}%
+\contentsline {subsection}{\numberline {4.1.1}Euler's Formula}{41}{subsection.4.1.1}%
+\contentsline {section}{Integer Factorisation Problem}{42}{section*.43}%
+\contentsline {subsection}{\numberline {4.2.1}Is it really hard to find the \(e\)th root modulo \(N\)?}{42}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}\(N\in \text {primes}\)}{42}{subsubsection.4.2.1.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}\(N\in \text {product of 2 primes}\)}{43}{subsubsection.4.2.1.2}%
+\contentsline {subsection}{\numberline {4.2.2}Then how is this cryptosystem even safe?}{43}{subsection.4.2.2}%
+\contentsline {section}{RSA Implementation}{43}{section*.44}%
+\contentsline {subsection}{\numberline {4.3.1}Nuances in choosing \(e\)}{44}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Security issues in RSA}{44}{subsection.4.3.2}%
+\contentsline {section}{Primality testing}{45}{section*.45}%
+\contentsline {subsection}{\numberline {4.4.1}Fermat Primality test}{46}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.1}Witnesses}{46}{subsubsection.4.4.1.1}%
+\contentsline {subsection}{\numberline {4.4.2}Miller-Rabin test for Primality}{46}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Miller-Rabin witnesses}{47}{subsubsection.4.4.2.1}%
+\contentsline {section}{Factorisation algorithm}{49}{section*.46}%
+\contentsline {subsection}{\numberline {4.5.1}Pollard's \(p-1\) factorisation algorithm}{49}{subsection.4.5.1}%
+\contentsline {chapter}{Addendum}{51}{chapter*.47}%
+\contentsline {chapter}{Bibliography}{52}{chapter*.48}%

@@ -1,0 +1,24 @@
+
+	\mysection{8}{Probability Theory}
+		\subsection{Basics}
+			Well the basics are luckily... pretty basic. All of the stuff we learnt already in JEE. Some of the interesting concepts are in the next few sections.
+
+		\subsection{Monty Hall Problem}
+		\begin{greenbox}
+			\centering \emph{Suppose you’re on a game show, and you’re given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what’s behind the doors, opens another door, say No. 3, which has a goat. He then says to you, “Do you want to pick door No. 2?” Is it to your advantage to switch your choice? } \par
+		\end{greenbox}
+
+			\raggedright One important thing to keep in mind which makes the final solution seem non-intuitive \(\rightarrow\) The host knows which door has the Car behind it. He will never open the door with the car.
+			Let us try to rationalise the problem based on Bayes' Theorem.\\
+			Assume for now that whatever door we choose is called $Door_1$, the host opens either $Door_2$ or $Door_3$ \par
+
+			Case 1: $Car \rightarrow Door_1$\\
+			\quad In that case $P(keep\rightarrow Car)=1$ and $P(swap\rightarrow Car)=0$
+
+			Case 2: $Car \rightarrow Door_2$\\
+			\quad In that case $P(keep\rightarrow Car)=0$ and $P(swap\rightarrow Car)=1$
+
+			Case 3: $Car \rightarrow Door_3$\\
+			\quad In that case $P(keep\rightarrow Car)=0$ and $P(swap\rightarrow Car)=1$\par 
+
+			Using Total probability theorem, it is obvious that $P(keep \rightarrow Car)= \frac{1}{3}$ and $P(swap \rightarrow Car)= \frac{2}{3}$

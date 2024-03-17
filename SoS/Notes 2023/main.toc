@@ -1,0 +1,53 @@
+\contentsline {chapter}{Week 1}{4}{chapter*.2}%
+\contentsline {section}{Introduction to Cryptography}{4}{section*.3}%
+\contentsline {subsection}{\numberline {1.1.1}Some terminologies}{4}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Early Cryptography}{5}{subsection.1.1.2}%
+\contentsline {section}{Some Mathematical Pre-requisites for Modular Arithematic}{7}{section*.4}%
+\contentsline {subsection}{\numberline {1.2.1}GCD}{7}{subsection.1.2.1}%
+\contentsline {section}{Modular Arithematic}{9}{section*.5}%
+\contentsline {subsection}{\numberline {1.3.1}Format}{9}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Properties}{10}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Ring theory}{10}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Shift Ciphers and Modulo Arithematic}{12}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Fast Powering algorithm}{13}{subsection.1.3.5}%
+\contentsline {section}{Prime numbers and Finite Fields}{14}{section*.6}%
+\contentsline {subsection}{\numberline {1.4.1}Division modulo $m$}{14}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Division in rings}{15}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Finite Fields}{16}{subsection.1.4.3}%
+\contentsline {section}{Fermat's ``Little'' Theorem}{17}{section*.7}%
+\contentsline {subsection}{\numberline {1.5.1}Primitive Roots Theorem}{20}{subsection.1.5.1}%
+\contentsline {section}{Symmetric Ciphers}{21}{section*.8}%
+\contentsline {subsection}{\numberline {1.6.1}Notations}{21}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Principles of Succesful Ciphers}{22}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Encoding of Cipher Blocks}{23}{subsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.6.4}Examples of Symmetric Ciphers}{23}{subsection.1.6.4}%
+\contentsline {subsection}{\numberline {1.6.5}Random bit sequences}{29}{subsection.1.6.5}%
+\contentsline {section}{Asymmetric Ciphers}{29}{section*.13}%
+\contentsline {chapter}{Week 2}{32}{chapter*.14}%
+\contentsline {section}{Probability Theory}{32}{section*.15}%
+\contentsline {subsection}{\numberline {2.1.1}Basics}{32}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Monty Hall Problem}{33}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Monte-Carlo Algorithms}{35}{subsection.2.1.3}%
+\contentsline {section}{Information Theory}{35}{section*.16}%
+\contentsline {chapter}{Week 3}{37}{chapter*.17}%
+\contentsline {section}{Random Numbers}{37}{section*.18}%
+\contentsline {subsection}{\numberline {3.1.1}Why do we need random numbers}{37}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Is it even possible to construct an actually random number?}{38}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Pseudo-Random Number Generator}{39}{subsection.3.1.3}%
+\contentsline {section}{Hash Functions}{40}{section*.19}%
+\contentsline {subsection}{\numberline {3.2.1}How does SHA-1 work?}{42}{subsection.3.2.1}%
+\contentsline {section}{Public Standard for making PRNGs}{44}{section*.20}%
+\contentsline {section}{Stream Ciphers}{44}{section*.21}%
+\contentsline {subsection}{\numberline {3.4.1}Deciphering Stream Ciphers}{46}{subsection.3.4.1}%
+\contentsline {section}{Block Cipher}{47}{section*.22}%
+\contentsline {subsection}{\numberline {3.5.1}Electronic Code Book Method}{48}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Cipher Block Chaining}{51}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}How to decrypt CBC}{52}{subsubsection.3.5.2.1}%
+\contentsline {section}{\numberline {3.6}Counter Mode (CTR)}{52}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Decryption}{53}{subsection.3.6.1}%
+\contentsline {chapter}{Week 4}{55}{chapter*.28}%
+\contentsline {section}{Introduction to Diffie Hellman}{55}{section*.29}%
+\contentsline {section}{Discrete Logarithm}{57}{section*.31}%
+\contentsline {chapter}{Summary of project completion}{59}{chapter*.32}%
+\contentsline {section}{\numberline {5.1}Modified PoA}{59}{section.5.1}%
+\contentsline {chapter}{Bibliography}{61}{chapter*.33}%

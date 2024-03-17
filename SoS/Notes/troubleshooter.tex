@@ -1,0 +1,187 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{report} % use larger type; default would be 10pt
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{eucal}
+\usepackage{amsfonts}
+\usepackage{authblk}  %For extra authors
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{svg}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{caption}
+\usepackage{mdframed}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{chemformula}
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{xcolor}
+\usepackage[many]{tcolorbox}
+\usepackage{pagecolor}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{positioning}
+\usepackage{afterpage}
+
+
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+\geometry{margin=1in}
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{zref-savepos} % For filltillendofpage wala command
+\usepackage{graphicx} % support the \includegraphics command and options
+\graphicspath{{c:\Users\aryav\Desktop\SoS\Notes\Photos}}
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\fancyhf{}
+\fancyhead[R]{\thepage}
+
+\usepackage[rightcaption]{sidecap}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=teal,  %choose some color if you want links to stand out
+    citecolor= mPurple,
+}
+
+%%% END Article customizations
+
+\definecolor{covercolor}{HTML}{76C4AE}
+\definecolor{MustardAddicted}{HTML}{CABD80}
+\definecolor{darkBlue}{RGB}{16, 45, 48}
+\definecolor{LightGray}{gray}{0.9}
+\definecolor{fadedyellow}{RGB}{250, 245, 228}
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{CStyle}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\tiny,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    language=C
+}
+
+% \filltopageendgraphics[<options>]{<file>}
+\newcommand{\filltopageendgraphics}[2][]{%
+  \par
+  \zsaveposy{top-\thepage}% Mark (baseline of) top of image
+  \vfill
+  \zsaveposy{bottom-\thepage}% Mark (baseline of) bottom of image
+  \smash{\includegraphics[height=\dimexpr\zposy{top-\thepage}sp-\zposy{bottom-\thepage}sp\relax,#1]{#2}}%
+  \par
+}
+
+\newcommand{\mychapter}[2]{
+    \setcounter{chapter}{#1}
+    \setcounter{section}{0}
+    \chapter*{#2}
+    \addcontentsline{toc}{chapter}{#2}
+}
+
+\newcommand{\mysection}[2]{
+    \setcounter{section}{#1}
+    \setcounter{subsection}{0}
+    \section*{#2}
+    \addcontentsline{toc}{section}{#2}
+}
+
+\newtcolorbox{mybox}{colback=red!5!white,colframe=red!75!black}
+\newtcolorbox{greenbox}{colback=green!5!white,colframe=green!75!black}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+
+%%% The "real" document content comes below...
+
+\title{\Huge{\textbf{\underline{Deciphering the Mysteries}}} \\ \normalsize SoS 2022(Cryptography)}
+\author{Arya Vishe \\21D070018, IIT-B}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+
+ % auteur
+\affil{Mentor- Param Rathour \\ \includegraphics[width=0.75\textwidth]{Photos/Cover_page.png}}
+
+\date{12/05/2022} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+    
+    \newpagecolor{covercolor}\afterpage{\restorepagecolor}
+    \maketitle
+
+    \parskip 0.70cm
+    \newpagecolor{fadedyellow}
+    
+    {
+        \hypersetup{linkcolor=darkBlue}
+        \tableofcontents
+    }
+
+    \input{Auth_note.tex}
+    \input{Week_1.tex}
+    \input{Week_2.tex}
+    \input{Week_3.tex}
+    \input{Week_4.tex}
+    \input{Week_5.tex}
+    \input{Extras.tex}
+    \input{Midsem_bs.tex}
+
+\end{document}

@@ -1,0 +1,178 @@
+\documentclass[11pt]{beamer}
+\usetheme{Frankfurt}
+\usecolortheme{dolphin}
+\usefonttheme{professionalfonts} % using non standard fonts for beamer
+\usefonttheme{serif}
+
+%Information to be included in the title page:
+\title{Deciphering the Mysteries}
+\subtitle{SoS 2023(Cryptography)}
+\author{Arya Vishe\\21D070018\\\small{Mentor- Nilabha Saha}}
+\institute{IIT-Bombay}
+\date{}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{A brief introduction}
+  \begin{frame}
+    \frametitle{General information}
+    Cryptography is the practice and study of techniques for secure communication in the presence of adversarial behavior. \\~\\\pause
+
+    In general, \alert{\emph{Alice}} is trying to communicate with \alert{\emph{Bob}} over an unsecure channel where \alert{\emph{Eve}} is trying to eavesdrop.\\~\\\pause
+
+    In general, we always deal with binary data when it comes to advanced forms of encryption as we are usually talking about communication between two computers considering the \alert{computation required to encrypt/decrypt.}\pause
+
+    We call the original message to be communicated as \alert{\emph{plaintext}} and the encrypted data that is sent as \alert{\emph{ciphertext}}. The \alert{\emph{key}} is the information known to only \emph{Bob} and \emph{Alice}, that can be used for encryption/decryption of data. 
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Today's topics}
+    We will try to cover the Key distribution problem, Asymmetric cryptosystems and RSA in specific.
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{The Key Distribution Problem}
+    Traditional cryptosystems required the key to be physically passed to every recepient.\pause 
+    \begin{itemize}
+      \item Even advanced machines like the Enigma would require high ranking officers to carry around an Enigma machine and a sheet with all codes for a specific month.
+      \item Banks in the primitive age of the internet would hand deliver keys to their most important clients to ensure that they can remotely access some services.
+    \end{itemize}
+    Obviously it is not practical to meet each and every person face to face if you want to start communication with them over the internet. 
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Symmetric and Asymmetric cryptosystems}
+    We can divide cryptosystems into 2 classes-
+    \begin{itemize}
+      \item<1->Symmetric Cryptosystems- Anyone who can encrypt a \emph{plaintext} also has enough information to be able to decrypt any \emph{ciphertext}.
+      \item<2->Asymmetric Cryptosystems- Anyone can encrypt (\emph{Alice}) but only the receiver has enough information to decrypt (\emph{Bob}).
+    \end{itemize}
+    \pause
+    As you can already see, asymmetric cryptosystems do show some promise for having a solution to the key distribution problem.
+
+  \end{frame}
+
+\section{Asymmetric Cryptosystems}
+  \begin{frame}
+    \frametitle{The abstract concept}
+    It consists of an encryption function and a decryption function (publicly known) which use a public and private key respectively.\\\pause
+    Let \(\mathcal{C}\) and \(\mathcal{M}\) be the domains of ciphertext and plaintext respectively.
+    \[e_{k_{public}}():\mathcal{M}\rightarrow \mathcal{C}\text{ AND } d_{k_{private}}():\mathcal{C}\rightarrow \mathcal{M}\]\pause
+    If \(m=\text{plaintext}\) and \(c=\text{corresponding ciphertext}\) then,
+    \[c=e_{k_{public}}(m)\Rightarrow m=d_{k_{private}}(c)=d_{k_{private}}(e_{k_{public}}(m))\]\pause
+    \begin{block}{}
+      In a way, you can say that \(d_{k_{private}}()\) is the \alert{inverse} of \(e_{k_{public}}()\)
+    \end{block}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Requirements of this function}
+    The function \(e_{k_{public}}()\) should one such that-
+    \begin{enumerate}
+      \item<1-> Finding \(k_{private}\) from any information about \(k_{public}\) should be a difficult task.
+      \item<2-> Figuring out the input of \(e_{k_{public}}()\) from the output should be difficult without knowing \(k_{private}\).
+    \end{enumerate}\pause
+    One candidate for such a function is exponentiation in modulo.
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Modulo function}
+    \[a^b \equiv c \bmod(d)\]
+     You can get a lot of variation in \(c\) by varying \(b\) in the above equation and thus can be used as a ``\alert{trapdoor function}''.
+  \end{frame}
+
+  \begin{frame}
+    Depending on the trapdoor information, we can use it for 2 different cryptosystems
+    \begin{columns}
+      \begin{column}{0.5\textwidth}
+        \begin{center}
+          \textbf{Discrete Logarithm Problem (DLP)}
+        \end{center}
+        \[g^x\equiv h\bmod(p)\]
+        The problem of finding \(x\) can be used 
+        \begin{enumerate}
+          \item Diffie-Hellman Cryptosystem
+          \item ElGamal Cryptosystem
+        \end{enumerate}
+      \end{column}
+      \begin{column}{0.5\textwidth}  %%<--- here
+        \begin{center}
+          \textbf{Integer Factorisation Problem}
+        \end{center}
+        \[x^e\equiv h \bmod(p\cdot q)\]
+        The problem of finding \(x\) here can be used in
+        \begin{enumerate}
+          \item RSA cryptosystem implementation.
+        \end{enumerate}
+      \end{column}
+    \end{columns}
+
+  \end{frame}
+
+\section{Integer Factorisation Problem}
+  \begin{frame}
+    \frametitle{Some necessary math}
+      The math involved would be too heavy for such a short video so instead I will just ask you to suspend disbelief for a few moments with the following few theorems.\footnote{You can refer to Chapter: RSA and Integer Factorisation in the endterm report}.\\~\\
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Some necessary math}
+      If we are looking at the equation, \[x^e\equiv h \bmod(p)\text{ where $p\in$ prime numbers, $h\in(1, p)$}\]
+      Then solving for \(x\) is trivially easy and involves finding \(d\) such that \(d\cdot e \equiv 1 \bmod(p-1)\)
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Some necessary math}
+      If we have to solve any equation
+      \[x^e\equiv h \bmod(p\cdot q)\]
+      We can easily decompose it to two congruences \[x^e\equiv h \bmod(p)\] and \[x^e\equiv h \bmod( q)\] and then use Chinese Remainder Theorem to stitch the solutions of the 2 congruences to get the solution for the original congruence.
+  \end{frame}
+
+  \begin{frame}
+    But wait!
+
+    Did we just say that \[x^e\equiv h \bmod(p\cdot q)\] is easy to solve?\pause
+
+    Yes. \\\pause
+
+    Then what is the difficult part in integer factorisation? \\
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Some necessary math}
+      We can only solve this equation\[x^e\equiv h \bmod(p\cdot q)\]
+      If we know both $p$ and $q$ individually. If you just know \(N= p\cdot q\), you will HAVE to factorise $N$ else you cannot proceed with solving it. \\\pause And factorisation does not have any easy algorithm known as of yet.
+      
+  \end{frame}
+
+\section{RSA}
+  \begin{frame}
+    \frametitle{RSA Implementation}
+    \begin{enumerate}
+      \item \emph{Bob}\(\Rightarrow\)Chooses a $p,q\in \text{primes}$ to construct \(N= p \cdot q\).\footnote{\(e\) is then selected such that \(\gcd(e, (p-1)\cdot (q-1))=1\). There are some more nuances in selecting \(e\)}\pause
+      \item \emph{Alice}\(\Rightarrow\)Converts her plaintext to an integer \(m\) such that \(1\leq m<N\). She then sends \(c \equiv m^e \bmod(N)\) to \emph{Bob.}\pause
+      \item \emph{Bob}\(\Rightarrow\)Finds \(d\) using \(d\cdot e \equiv 1 \bmod\big((p-1)\cdot (q-1)\big)\) and calculates \(c^d \equiv m^{e\cdot d}\equiv m \bmod(N)\).\pause
+      \item \emph{Eve}$\Rightarrow$This whole while had $m^e$ but inversion required her to factor \(N\) which is a difficult task without an easy algorithm as is the case with DLP.
+    \end{enumerate}
+  \end{frame}
+
+  \begin{frame}
+    \Large \centering{Thank you. : )}
+  \end{frame}
+
+
+\end{document}

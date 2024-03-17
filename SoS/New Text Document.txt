@@ -1,0 +1,18 @@
+So I have read the entire Simon Singh book except for a few chapters in between. Now I have a decent grasp on introduction to the classical ciphers. 
+Essentially I have 9 weeks. Let us just call that as 7 weeks as I will definitely not be free for most of the period. Now for the 7 that remain, I would like to instead concentrate on a few concepts-
+1. Cryptanalysis of Caeser, Vigenere ciphers, and the Enigma and Collosus machines
+2. Basic number theory and a bit of group theory on the side- preferably all self contained in silverman
+3. RSA protocol
+4. Data and Advanced encryption standards
+5. Quantum Cryptography
+6. One deep dive topic-
+
+According to Silverman, what my trajectory should look like-
+1. Simple stuff like ciphers and shit (Do chap-1 of Silverman) + Some information from Vanstone (skim through Chapter 1) + Probabilitsic analysis of vigenere from Silverman
+(light)
+2. and 3.  Mathematical background from Vanstone (deep diving stuff)
+4. Chapter 2 of Silverman
+5. Chapter 3 of Silverman
+6. Chapter 4 of Silverman
+7. (extra) Generation of Pseudorandom bits + Hash functions + Digital signatures + Stream and Block Ciphers + Quantum Computing 
+8. AES and DES

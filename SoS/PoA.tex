@@ -1,0 +1,126 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{authblk}  %For extra authors
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{caption}
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+\geometry{margin=1in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+\setlength\parindent{24pt}
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{\huge{Deciphering the Mysteries} \\ \normalsize Plan of Action- SoS 2023(Cryptography)}
+\author{Arya Vishe \\21D070018, IIT-B} % auteur
+\affil{Mentor- Nilabha Saha}
+
+
+\date{20/06/23} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+
+\begin{document}
+\maketitle
+
+\section{Objectives}
+
+Over the period of the next few weeks, I intend to start off with classical ciphers such as Vigen\'{e}re Ciphers. After that, I can spend a few weeks to build up some knowledge on fields such as Number theory, Group theory, and Abstract Algebra, as a basis for modern cryptography techniques such as RSA, DES, AES encryptions, and, if time permits, Stream and Block ciphers, Hash functions, Pseudo-random bit generation and Elliptic curves.  \par
+I will also be having a project running in parallel to SoS so I will be keeping relatively low loads in the beginning.
+
+\section{Outline of the timetable}
+
+\captionsetup{labelformat=empty}
+
+\begin{center}
+\begin{longtable}{m{0.20\linewidth}|m{0.75\linewidth}}\\
+\multicolumn{2}{c}%
+{\tablename\ \thetable\ -- \textit{}} \\
+
+\multicolumn{2}{l}{\textit{}} \\
+\endfoot
+\hline
+\endlastfoot
+\textbf{Week 1} (29th May- 4th June) & Overview and introduction to cryptography\footnotemark, Probabilistic cryptanalysis of Vigen\'{e}re ciphers \\  \\
+	\textbf{Week 2} (5th June- 11th June) & Probability theory, Number theory, Information theory, Abstract Algebra \\  \\
+	\textbf{Week 3} (12th June- 18th June) &  Generation of Pseudorandom bits, Stream and Block Ciphers \\ \\
+	\textbf{Week 4} (19th June- 25th June) & \\ \\
+	\hline \hline \\
+	\textbf{Mid-summer Report week}\footnotemark (26th June- 2nd July) & Lag week\\ \\
+	\hline \hline \\
+	\textbf{Week 6} (3rd July- 9th July) & Diffie Heilman (Discrete Logarithm), RSA (Factorisation) \\ \\
+	\textbf{Week 7} (10th July- 16th July) & Finite Fields, Data Encryption Standard (DES), Advanced Encryption Standard (AES) \\  \\
+	\textbf{Week 8} (17th July- 23rd July) & Hash functions, Authentication problem, Digital signatures \\ \\
+	\hline \hline
+	\textbf{Final Project submission\footnotemark} (24th July- 30th July) & Elliptic curves\\  
+	\hline \hline
+\end{longtable}
+\end{center}
+ 
+\addtocounter{footnote}{-2}
+\footnotetext{From both \cite{Silverman} and \cite{Holden}}
+\addtocounter{footnote}{1}
+\footnotetext{Tentative date- 15th June}
+\addtocounter{footnote}{1}
+\footnotetext{Tentative date- 15th July}
+
+\begin{thebibliography}{20} 
+ \bibitem[1]{Silverman} Jeffrey Hoffstein, Jill Pipher, Joseph H. Silverman, \emph{An Introduction to Mathematical Cryptography}
+ \bibitem[2]{Holden} Joshua Holden, \emph{THE MATHEMATICS OF SECRETS}
+ \bibitem[3]{Modern} Jonathan Katz and Yehuda Lindell, \emph{Introduction to Modern Cryptography}
+ \bibitem[4]{Vanstone} Alfred J. Menezes, Paul C. van Oorschot, Scott A. Vanstone, \emph{HANDBOOK of APPLIED CRYPTOGRAPHY}
+ \bibitem[5]{CodeBook} Simon Singh,\emph{ "The Code Book- HOW TO MAKE IT, BREAK IT, HACK IT, CRACK IT"}
+\end{thebibliography}
+
+\noindent{\textbf{\underline{Note}}- \cite{Silverman} and \cite{Holden} are going to be referred to primarily, \cite{Modern} will be used for Modern methods and \cite{Vanstone} will be used as an additional reference. \cite{CodeBook} is merely for introductory puposes}
+\end{document}
